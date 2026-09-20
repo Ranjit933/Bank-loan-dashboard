@@ -24,11 +24,12 @@ The focus of this summary is on the loan data and highlighting essential metrics
 
 The analysis aims to uncover trends and insights related to loan performance, borrower characteristics, and the effectiveness of various loan products. Key areas of focus include evaluating loan approval rates, default rates, and the influence of borrower attributes on loan outcomes. The insights derived are intended to support strategic decision-making and improve the institution’s lending practices.
 
- 
 ## Bank Loan Summary Report Dashboard
+![Summary](https://github.com/Ranjit933/Bank-loan-dashboard/blob/main/Image/1.png)
 
 ##  Overview
 This project involves creating a dynamic dashboard in Power BI to analyze and visualize key metrics related to bank loans. The dashboard aims to provide insights into loan performance, risk assessment, and customer demographics, enabling stakeholders to make data-driven decisions.
+![OverView](https://github.com/Ranjit933/Bank-loan-dashboard/blob/main/Image/2.png)
 
 ## Features
 * Total Loan Metrics: Displays total loans issued, outstanding balances, and default rates.
@@ -39,8 +40,11 @@ This project involves creating a dynamic dashboard in Power BI to analyze and vi
 * Risk Indicators: Identifies high-risk loans with metrics such as late payments and debt-to-income ratios.
 * Interactive Filters: User-friendly filters for exploring data by different categories and timeframes.
 
+![Details](https://github.com/Ranjit933/Bank-loan-dashboard/blob/main/Image/3.png)
+
 ## Purpose
 The dashboard serves as a powerful tool for data analysis, enabling banks to monitor performance, identify trends, and assess risk effectively. It facilitates strategic decision-making and enhances understanding of the loan portfolio.
+![Schema](https://github.com/Ranjit933/Bank-loan-dashboard/blob/main/Image/4.png)
 
 ## Technologies Used
 * Power BI for data visualization
@@ -137,6 +141,7 @@ Use for Banks: Banks use interest rates to price loans, manage profit margins, a
 ## Loan Amount:
 Purpose: Loan Amount is the total borrowed sum. It defines the principal amount.
 Use for Banks: Banks use Loan Amount to determine loan size
+![End to end bank loan process](https://github.com/Ranjit933/Bank-loan-dashboard/blob/main/Image/Dashboard_summ.png)
 
 ## Query
 ```sql
@@ -391,6 +396,19 @@ FROM bank_loan_data
 WHERE grade = 'A'
 GROUP BY  home_ownership
 ORDER BY  COUNT(id) DESC
+```
+
+## Repository Structure
+
+```
+Bank-Loan/
+│
+├── Bank Loan Report.pbix           # Power BI dashboard file
+├── Bank Report.sql                 # SQL queries used for data analysis
+├── Bank loan report query.docx     # Documented SQL queries & explanations
+├── Bank Loan Report.pdf            # Exported PDF version of the dashboard
+├── images.jpeg                     # Dashboard preview image
+└── README.md                       # Project documentation
 ```
 
 
